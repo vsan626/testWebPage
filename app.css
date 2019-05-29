@@ -1,0 +1,123 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.navBar {
+	background-color: white;
+	display: flex;
+	padding: 45px;
+	font-family: 'Lora', serif;
+	color: black;
+	border-bottom: thin solid #949596;
+}
+
+.navBarItems {
+	display: flex;
+}
+
+.navBarLink {
+	padding-right: 10px;
+}
+
+.navBarItemsRight {
+	margin-left: auto;
+}
+
+.navBarLinkToggle {
+	display: none;
+}
+
+@media only screen and (max-width: 768px) {
+	.navBarItems,
+	.navBar {
+		flex-direction: column;
+	}
+	.navBarItemsRight {
+		display: none;
+	}
+	.navBarItemsRight {
+		margin-left: 0;
+	}
+	.navBarToggleShow {
+		display: flex;
+	}
+	.navBarLinkToggle {
+		align-self: flex-end;
+		display: initial;
+		position: absolute;
+		cursor: pointer;
+	}
+}
+
+body {
+	margin:0;
+	background-color: white;
+	background-position: top;
+	background-size: 100% auto;
+	/*background-image: 
+		url("http://www.theventurecorner.com/vision/Bathroom-Remodel-Ideas-Modern-Open-Showers-On-Dream.jpg");
+*/	background-repeat: no-repeat;
+}
+
+.container {
+	padding-top: 25px;
+}
+
+.images {
+	margin: 0 auto;
+	width: 450px;
+	height: 500px;
+	overflow: hidden;
+/*	border: 9px solid #000000; */
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+.intro {
+	padding-top: 25px;
+	text-align: center;
+	font-family: 'Lora', serif;
+
+}
+
+.footContainer {
+	text-align: center;
+}
+
+.bottomNav {
+	display: inline-block;
+}
+
+.todoContainer {
+	margin: 0 auto;
+	text-align: center;
+	width: 300px;
+	border: 1px solid;
+}
+
+.todoList {
+	list-style-type: none;
+	padding: 0;
+}
+
+.delTodo {
+	margin-right: 25px;
+	padding-left: 100px
+
+}
+
+
+input{
+/*	text-transform: uppercase;
+*/    outline: none;
+    border: none;
+	border-color: transparent;
+}
+
+
+.todoContainer li:nth-child(odd) {
+	background: #cecccc;
+}
